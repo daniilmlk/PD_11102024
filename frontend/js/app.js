@@ -22,8 +22,9 @@ window.onload = function() {
             const data = await response.json();
 
             if (response.ok) {
-                document.getElementById('token-text').innerHTML = `<p>User Email: ${data.email}<br>
-                                                                    User Name: ${data.name}</p>`;
+                document.getElementById('token-text').innerHTML = `<p>User Email: ${data.user.email}<br>
+                                                                    User Name: ${data.user.name}<br>
+                                                                    Token: ${data.token}</p>`;
                 // await fetchAllPosts(token);
             }
 
