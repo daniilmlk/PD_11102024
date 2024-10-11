@@ -1,0 +1,1 @@
+Ko vareju - to izdariju
