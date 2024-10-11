@@ -11,6 +11,18 @@
     <h1>Laravel API frontend</h1>
 
     <div class="container">
+        <h2>Login</h2>
+        <form action="/api/login" method="post" id="login-form">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password">
+            <input type="submit" value="Login">
+        </form>
+        <div id="token-text"></div>
+    </div>
+
+    <div class="container">
         <h2>Get user</h2>
         <form action="/api/user" method="get" id="get-user-form">
             <label for="token">Token</label>

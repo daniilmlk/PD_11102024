@@ -1,4 +1,37 @@
 window.onload = function() {
+    const loginForm = document.getElementById('login-form');
+    loginForm.addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        let formData = new FormData(event.target);
+        // let token = formData.get('token');
+
+        try {
+            const response = await fetch('http://127.0.0.1:8000/api/login', {
+                method: 'POST',
+                headers: {
+                    'Accept': `application/json`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: formData.get('email'),
+                    password: formData.get('password')
+                })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                document.getElementById('token-text').innerHTML = `<p>User Email: ${data.email}<br>
+                                                                    User Name: ${data.name}</p>`;
+                // await fetchAllPosts(token);
+            }
+
+        } catch (error) {
+           console.log(error);
+        }
+    });
+
     const getForm = document.getElementById('get-user-form');
     getForm.addEventListener('submit', async function(event) {
         event.preventDefault();
@@ -40,7 +73,7 @@ window.onload = function() {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/html'
                 },
                 body: JSON.stringify({
                     title: formData.get('title'),
