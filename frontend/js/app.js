@@ -178,7 +178,7 @@ async function fetchAllPosts(token) {
         console.log(error);
     }
 }
-
+ 
 
     const token = document.getElementById('token').value;
     if (token) {

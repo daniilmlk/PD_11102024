@@ -1,82 +1,137 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Garamond', serif; /* Elegant serif font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0e6d2; /* Light cream background */
+    background-image: url('https://img.freepik.com/premium-photo/beautiful-bible-illustration-old-testament-new-testament-art-christian-background-god-s-word_67778-724.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
+    color: #3e3e3e; /* Dark gray for text */
 }
 
-
+/* Main Heading */
 h1 {
     text-align: center;
     margin: 20px 0;
-    font-size: 36px;
+    font-size: 48px;
+    color: #a67c1d; /* Gold color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle glow effect */
 }
 
-
+/* Container Styles */
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    border: 2px solid #d5a856; /* Gold border */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: #f5ddaa; /* White for contrast */
+    transition: all 0.3s ease;
 }
 
-
+/* Container Headings */
 .container h2 {
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 36px;
     text-align: center;
+    color: #a67c1d; /* Gold color for headings */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle glow effect */
 }
 
-
+/* Labels */
 .container label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-} 
+    color: #3e3e3e; /* Dark gray for labels */
+}
 
- .container input[type="text"],
+/* Input Fields and Textarea */
+.container input[type="text"],
+.container input[type="password"],
 .container textarea,
 .container input[type="submit"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #b3b3b3; /* Light gray border */
+    border-radius: 6px;
     font-size: 16px;
     box-sizing: border-box;
-} 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; /* White for input fields for contrast */
+    color: #333; /* Dark gray for input text */
+}
 
+/* Input Focus Effect */
+.container input[type="text"]:focus,
+.container input[type="password"]:focus,
+.container textarea:focus {
+    border-color: #a67c1d; /* Gold on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(166, 124, 29, 0.7); /* Glowing effect */
+}
 
+/* Textarea */
 .container textarea {
     resize: vertical;
     min-height: 120px;
-} 
-
-
-.container input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-} 
-
-
-.container input[type="submit"]:hover {
-    background-color: #45a049;
 }
 
-button{
-    background-color: #4CAF50;
+/* Submit Button */
+.container input[type="submit"],
+button {
+    background-color: #a67c1d; /* Gold for buttons */
     color: white;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button Hover Effect */
+.container input[type="submit"]:hover,
+button:hover {
+    background-color: #bda54c; /* Slightly lighter gold on hover */
+    transform: translateY(-1px);
+}
+
+/* Button Styles */
+button {
+    font-size: 20px;
     text-align: center;
     margin: 10px;
-
+    display: inline-block;
+    padding: 15px 25px;
 }
 
+/* Posts Styles */
+.post {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #a67c1d; /* Gold border */
+    border-radius: 6px;
+    background-color: rgba(248, 239, 215, 0.8); /* Light beige background with transparency */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Post Hover Effect */
+.post:hover {
+    box-shadow: 0 4px 12px rgba(166, 124, 29, 0.5); /* Soft shadow on hover */
+}
+
+/* Align Buttons Center */
 #buttons {
     text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    color: #3e3e3e; /* Dark gray for footer */
 }
