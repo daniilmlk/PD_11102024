@@ -27,6 +27,7 @@ window.onload = function() {
                                                                     Token: ${data.token}</p>`;
                 // await fetchAllPosts(token);
                 alert(`Login successful! Token: ${data.token}`);
+                localStorage.setItem('authToken', data.token);
             }
 
         } catch (error) {
@@ -107,7 +108,7 @@ postForm.addEventListener('submit', async function(event) {
     event.preventDefault();
 
     let formData = new FormData(event.target);
-    let token = formData.get('token'); // Ensure this token is valid
+    let token = localStorage.getItem('authToken'); // Ensure this token is valid
 
     try {
         const response = await fetch('http://127.0.0.1:8000/api/posts', {

@@ -59,8 +59,8 @@
     <div class="container" id="create-post-form-container">
         <h2>Create Post</h2>
         <form action="/api/posts" method="post" id="create-post-form">
-            <label for="token">Token</label>
-            <input type="text" name="token" id="token">
+            <!-- <label for="token">Token</label>
+            <input type="text" name="token" id="token"> -->
             <label for="title">Title</label>
             <input type="text" name="title" id="title">
             <label for="body">Body</label>
