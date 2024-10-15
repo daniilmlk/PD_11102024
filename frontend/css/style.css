@@ -5,14 +5,14 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Styling for the main header */
+
 h1 {
     text-align: center;
     margin: 20px 0;
     font-size: 36px;
 }
 
-/* Basic styling for form containers */
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -23,21 +23,21 @@ h1 {
     background-color: #fff;
 }
 
-/* Form title styling */
+
 .container h2 {
     margin-bottom: 15px;
     font-size: 24px;
     text-align: center;
 }
 
-/* Styling for form fields */
+
 .container label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-}
+} 
 
-.container input[type="text"],
+ .container input[type="text"],
 .container textarea,
 .container input[type="submit"] {
     width: 100%;
@@ -47,22 +47,36 @@ h1 {
     border-radius: 4px;
     font-size: 16px;
     box-sizing: border-box;
-}
+} 
 
-/* Styling for textarea field */
+
 .container textarea {
     resize: vertical;
     min-height: 120px;
-}
+} 
 
-/* Submit button specific styling */
+
 .container input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     cursor: pointer;
-}
+} 
 
-/* Hover effect for submit button */
+
 .container input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+
+}
+
+#buttons {
+    text-align: center;
 }
